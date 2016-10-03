@@ -1,0 +1,33 @@
+.long-page {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .super-header {
+    height: 100px;
+  }
+  .dev-tools {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+  }
+  header {
+    background-color: #f00;
+    color: #fff;
+    padding: 16px;
+    transition: all ease-in-out 0.3s;
+    &.sticky {
+      position: fixed;
+      transform: translate3d(0, 0, 0);
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  main {
+    height: 5000px;
+  }
+  footer {
+    height: 500px;
+  }
+}
